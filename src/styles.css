@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+h1{
+    color:royalblue;
+    
+}
+h2{
+    color:slateblue
+}
+
+body{
+    background-color: rgb(10,190,20,0.4);
+
+    
+}

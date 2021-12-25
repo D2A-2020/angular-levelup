@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @Input() name = '';
+  
+
   title = 'levelup';
+  show(){
+    alert('nice');
+  }
+
+  mostrarNombre(){
+    alert('tu nombre es: '+this.name);
+  }
 }
