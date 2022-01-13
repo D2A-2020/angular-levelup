@@ -1,14 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 h1{
-    color:royalblue;
+    color:darkseagreen;
     
 }
 h2{
-    color:slateblue
+    color:floralwhite
 }
 
 body{
     background-color: rgb(10,190,20,0.4);
-
+    background-image: url(./solid.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     
 }

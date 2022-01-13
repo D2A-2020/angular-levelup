@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { RequestsService } from './requests.service';
 
 
 @Component({
@@ -8,9 +9,20 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   @Input() name = '';
-  
-
   title = 'levelup';
+
+  constructor(private request:RequestsService){}
+
+  ngOnInit():void{
+    this.loadData();
+  }
+
+  loadData(){
+    this.request.get("http://localhost:8080").
+    subscribe(respuesta =>{console.log(respuesta)});
+  }
+
+  
   show(){
     alert('nice');
   }

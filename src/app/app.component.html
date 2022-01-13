@@ -1,44 +1,51 @@
-
-
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      
 <div style="margin:20px">
-  <button (click)="show()">alerta</button>
-
-  <hr>
-  <form action="">
-    <h1>formulario</h1>
-    <ol>
+  <router-outlet></router-outlet>
+  
+    <!-- <button (click)="show()" class="btn btn-success">alerta</button> -->
+    
+    <!-- <hr>
+    <form action="">
+      <h1>Formulario</h1>
+      <ol>
+        <li>
+          <label for="text">Nombre</label><br>
+          <input class="form-control" [(ngModel)]="name" type="text" name="name" id="name">
+          <input class="btn btn-primary" (click)="mostrarNombre()" type="submit" value="Enviar">
+  
+        </li>
+      </ol>
+    </form>
+    <hr> -->
+    <h1>Base de Datos</h1>
+  
+    <ol class="list-group">
       <li>
-        <label for="text">Nombre</label><br>
-        <input [(ngModel)]="name" type="text" name="name" id="name">
-        <input (click)="mostrarNombre()" type="submit" value="Enviar">
-
+        <h2>Insertar id:</h2>
+        <input class="form-control" type="text" id="id" value="">
+        <button class="btn btn-primary" >Isertar id</button>
+      </li>
+      <li>
+        <h2>Editar id:</h2>
+        <input class="form-control" type="text" id="id_actual" value="" placeholder="id actual"> <span>--</span>
+        <input class="form-control" type="text" id="id_nuevo" value="" placeholder="id nuevo">
+        <button class="btn btn-primary" >Cambiar</button>
+      </li>
+      <li>
+        <h2>Eliminar id</h2>
+        <input class="form-control" type="text" value="">
+      </li>
+      <li>
+        <h2>Listar Ids</h2>
+        <button class="btn btn-primary" >Listar Todos</button>
       </li>
     </ol>
-  </form>
-  <hr>
-  <h1>Base de Datos</h1>
-
-  <ol>
-    <li>
-      <h2>Insertar id:</h2>
-      <input type="text" id="id" value="">
-      <button>Isertar id</button>
-    </li>
-    <li>
-      <h2>Editar id:</h2>
-      <label for="">id actual: </label><input type="text" id="id_actual" value=""> <span>--</span>
-      <label for="">id nuevo:</label><input type="text" id="id_nuevo" value="">
-      <button>Cambiar</button>
-    </li>
-    <li>
-      <h2>Eliminar id</h2>
-      <input type="text" value="">
-    </li>
-    <li>
-      <h2>Listar Ids</h2>
-      <button>Listar Todos</button>
-    </li>
-  </ol>
-
-  <hr>
+  
+    <hr>
+  </div>
+    </div>
+  </div>
 </div>
